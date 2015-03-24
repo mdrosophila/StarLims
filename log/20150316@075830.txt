@@ -1,0 +1,26 @@
+------------------------------------------------------------
+07:03:30 - Inside DeleteClientCache( ) path to temp : C:\Users\qs\AppData\Local\Temp\
+07:03:30 - The directory [C:\Users\qs\AppData\Local\Temp\XFDRuntimeCache] exists = True
+07:03:30 - DeleteClientCache( ) finished successfully.
+------------------------------------------------------------
+07:03:30 - Inside ClearClickOnceFolder( )
+07:03:30 - Click Once path is C:\Users\qs\AppData\Local\Apps
+07:03:30 - Click Once path is [C:\Users\qs\AppData\Local\Apps] direcory exists:True
+07:03:30 - Exception on ClearClickOnceFolder( ) 
+System.UnauthorizedAccessException: Access to the path 'COPYING' is denied.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive)
+   at ClientCacheCleaner.ClientCache.ClearClickOnceFolder()
+------------------------------------------------------------
+07:03:30 - Inside ClearGAC( )
+07:03:30 - Assembly path is C:\Users\qs\AppData\Local\assembly
+07:03:30 - Assembly path is [C:\Users\qs\AppData\Local\assembly] direcory exists:True
+07:03:30 - ClearGAC( ) finished successfully.
+------------------------------------------------------------
+07:03:30 - Inside ClearAwesomium( )
+07:03:30 - Awesomium Cache path is [C:\Users\qs\AppData\Roaming\Awesomium\Default\Cache] direcory exists:False
+------------------------------------------------------------
+07:03:30 - Inside DeleteIECache( )
+07:03:30 - The path to IE cache : C:\Users\qs\AppData\Local\Microsoft\Windows\Temporary Internet Files
+07:03:31 - Inside DeleteIECache( ) the following files could not be deleted:
+C:\Users\qs\AppData\Local\Microsoft\Windows\Temporary Internet Files\counters.dat
